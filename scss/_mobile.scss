@@ -36,6 +36,15 @@
       height: 200px;
     }
   }
+  .about-info {
+    grid-template-areas:
+      "storyimage"
+      "story"
+      "tech1"
+      "tech2"
+      "tech3";
+    grid-template-columns: 1fr;
+  }
 }
 @include mediaSmall {
   main#home h1 {
