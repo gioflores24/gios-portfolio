@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "button";
 
 * {
   box-sizing: border-box;
@@ -98,6 +99,24 @@ main {
     border-bottom: $secondary-color 5px solid;
   }
 }
+// Portfolio projects
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut();
+    }
+  }
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
